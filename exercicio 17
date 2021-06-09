@@ -1,0 +1,25 @@
+#include<stdlib.h>
+#include<stdio.h>
+#include<string.h>
+
+
+int main()
+{
+	char plvr[6];
+	int x;
+	
+	do{
+	
+		printf ("Insira uma palavra com no maximo 5 caracteres: ");
+		gets (plvr);	
+	}
+		while(strlen(plvr)>5);
+	for (x=0; x<strlen(plvr); x++) {
+		if (x%2==0)
+       	printf ("%c \n",plvr[x]);
+    }
+	
+    system("pause");
+	
+	return 0;
+}
